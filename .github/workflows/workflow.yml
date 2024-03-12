@@ -1,4 +1,4 @@
-name: CI workflow
+name: CI workflow new
 on:
   push:
     branches: [ "main" ]
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container: python:3.9-slim
     steps:
-      - name: checkout
+      - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
         run: |
